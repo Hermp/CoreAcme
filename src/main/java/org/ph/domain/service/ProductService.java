@@ -1,0 +1,53 @@
+package org.ph.domain.service;
+
+import org.ph.domain.model.Product;
+
+import java.util.List;
+import java.util.Optional;
+import java.util.UUID;
+
+/**
+ * Domain service interface for Product-related business logic.
+ * This interface defines the core operations that can be performed on products.
+ */
+public interface ProductService {
+    /**
+     * Creates a new product.
+     *
+     * @param product The product to create
+     * @return The created product with generated ID
+     */
+    Product createProduct(Product product);
+
+    /**
+     * Retrieves a product by its ID.
+     *
+     * @param id The ID of the product to retrieve
+     * @return An Optional containing the product if found, or empty if not found
+     */
+    Optional<Product> getProductById(UUID id);
+
+    /**
+     * Retrieves all products.
+     *
+     * @return A list of all products
+     */
+    List<Product> getAllProducts();
+
+    /**
+     * Updates an existing product.
+     *
+     * @param id The ID of the product to update
+     * @param product The updated product data
+     * @return The updated product, or null if the product was not found
+     */
+    Product updateProduct(UUID id, Product product);
+
+    /**
+     * Deletes a product by its ID.
+     *
+     * @param id The ID of the product to delete
+     * @return true if the product was deleted, false if it was not found
+     */
+    boolean deleteProduct(UUID id);
+}
