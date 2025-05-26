@@ -1,4 +1,4 @@
-package org.ph.domain.service;
+package org.ph.application.service;
 
 import org.ph.domain.model.Product;
 

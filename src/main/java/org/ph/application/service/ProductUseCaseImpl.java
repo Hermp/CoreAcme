@@ -4,7 +4,6 @@ import lombok.RequiredArgsConstructor;
 import org.ph.application.port.in.ProductUseCase;
 import org.ph.application.port.out.ProductRepository;
 import org.ph.domain.model.Product;
-import org.ph.domain.service.ProductService;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

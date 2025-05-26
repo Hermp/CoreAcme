@@ -3,6 +3,8 @@ package org.ph.cucumber;
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
+import org.ph.ApplicationContextTest;
+import org.springframework.boot.test.context.SpringBootTest;
 
 /**
  * Runner class for Cucumber tests.

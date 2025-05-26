@@ -1,8 +1,8 @@
-package org.ph.domain.service.impl;
+package org.ph.application.service.impl;
 
 import lombok.RequiredArgsConstructor;
 import org.ph.domain.model.Product;
-import org.ph.domain.service.ProductService;
+import org.ph.application.service.ProductService;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

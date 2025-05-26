@@ -10,6 +10,7 @@ import org.ph.infrastructure.adapter.rest.dto.ProductRequest;
 import org.ph.infrastructure.adapter.rest.dto.ProductResponse;
 import org.ph.infrastructure.adapter.rest.mapper.ProductMapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.web.client.TestRestTemplate;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpMethod;
@@ -25,7 +26,7 @@ import java.util.UUID;
  * Step definitions for the product feature.
  * This class implements the Given-When-Then steps from the feature file.
  */
-@org.springframework.stereotype.Component
+@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 public class ProductStepDefinitions {
 
     @Autowired
